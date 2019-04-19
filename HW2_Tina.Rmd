@@ -1,28 +1,51 @@
 ---
-title: "HW2_Tina"
-output: html_document
+title: "作業2"
+output: 
+  html_document: 
+    toc: true
+    toc_depth: 1
+    number_sections: false
+    toc_float:
+      collapsed: true
+      smooth_scroll: false
+params:
+  name: ["黃鉦翔","林應廷","劉婷軒","張又方"]
+  id: [710761121,710661129,710761130,710761103]
+  group: "teamG"
+  url: ""
 ---
 
+
+***
+
+姓名：`r params$name`  
+學號：`r params$id`  
+組號：`r params$group`  
+網頁：`r params$url` 
+
+***
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r}
 
-```{r cars}
-summary(cars)
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+
+```
+
+```{r}
+
+```
+
