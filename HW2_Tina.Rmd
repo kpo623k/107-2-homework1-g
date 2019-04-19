@@ -29,23 +29,28 @@ params:
 
 ```
 
+## 1-1
+$Y=Y_-p+{\beta}^\star P$
+$E(Y|P)= E(Y_-p)+{\beta}^\star p|p)$
+$=E[E(Y_-p|rincome)+\tilde{\epsilon}|p]+{\beta}^{\star}p$
+$=E(2+3rincome+\tilde{\epsilon}|p)+{\beta}^{\star}p$
+$=2+3E(rincome|p)+E(\tilde{\epsilon}|p)+{\beta}^{\star}p$
+$=2+{\beta}^{\star}p$ 
+
+其中rincome ⊥ p 則 $E(rincome|p)=0$
+\tilde{\epsilon}⊥ p 則 E(\tilde{\epsilon}|p)=0
 
 
-```{r}
-
-```
 
 
+## 1-4
 
-```{r}
-
-```
-
-```{r}
-
-```
-
-```{r}
-
-```
-
+$E(Y|P_z,rincome)=E(Y_{-p}+\beta^*P|P_z,rincome)$
+                $=E[E(Y_{-p}|rincome)+\tilde{\epsilon}|P_z,rincome]+E(\beta^*P|P_z,rincome)$
+                $=2+3rincome+\beta^*P_z$
+                
+其中: 
+$E(\tilde\epsilon|P_z,rincome)=E[Y_{-p}-E(Y_{-p}|rincome)|P_z,rincome]$
+                             $=E(Y_{-p}|P_z,rincome)-E(Y_{-p}|P_z,rincome)=0$
+                             
+由此過程可以得知，$E(Y|P_z,rincome)$其中$P_z$的係數為$\beta^*$
